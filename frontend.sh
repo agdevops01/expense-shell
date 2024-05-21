@@ -16,7 +16,7 @@ STAT $?
 HEADING download frontend content
 curl -o /tmp/frontend.zip https://expense-artifacts.s3.amazonaws.com/expense-frontend-v2.zip &>>/tmp/expense.log
 STAT $?
-cd /usr/share/nginx/html
+cd/usr/share/nginx/html
 
 HEADING extract content
 unzip /tmp/frontend.zip &>>/tmp/expense.log
@@ -25,5 +25,5 @@ STAT $?
 HEADING restart service
 systemctl enable nginx &>>/tmp/expense.log
 systemctl restart nginx &>>/tmp/expense.log
-STAT $?
+STAT $?git pull
 
