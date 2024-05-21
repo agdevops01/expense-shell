@@ -25,5 +25,5 @@ STAT $?
 HEADING restart service
 systemctl enable nginx &>>/tmp/expense.log
 systemctl restart nginx &>>/tmp/expense.log
-STAT $?git pull
+STAT $?
 
